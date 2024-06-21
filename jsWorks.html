@@ -1,0 +1,108 @@
+<html>
+   <head>
+      <title>Form Validation</title>
+      <style>
+        .invalid {
+          color: red;
+          font-weight: bold;
+          border: 1px solid red;
+        }
+        .to-do {
+         width: 600px;
+         height: auto;
+         border: 1px solid black;
+         position: absolute;
+         left: 370px;
+        }
+        h2 {
+         text-align: center;
+         margin-top: px;
+        }
+        .input_1 {
+         border: 0.5px solid black;
+         height: 30px;
+         width: 75%;
+         margin-left: 5%;
+         margin-bottom: 20px;
+         position: relative;
+        }
+        .input_1:focus {
+         outline:  black;
+         border: 1.35px solid
+        }
+        .but1 {
+         border: none;
+         width: 15%;
+         height: 30px;
+         position: relative;
+         margin-left: 2%;
+         /* top: 6px; */
+         background-color: rgb(108, 74, 255);
+         color: white;
+        }
+        .exer {
+         color: black;
+         border-bottom: 1px solid grey;
+         width: 90%;
+         margin-left: 5%;
+         display: inline-block;
+         flex-direction: column;
+         height: auto;
+         margin-bottom: 20px;
+         padding-bottom: 0px;
+        }
+        .buttonP {
+         width: 12%;
+         height: 18px;
+         outline: none;
+         /* margin-left: 85%; */
+         background: white;
+         border: none;
+         color: red;
+         cursor: pointer;
+         position: absolute;
+         right: 25px;
+        }
+      </style>
+   </head>
+   <body>
+      <form action = "" name = "myForm" onsubmit = "return(validate());">
+        <h1 align="center">USER REGISTRATION</H1>
+         <table align="center" cellspacing = "3" cellpadding = "3" border = "3">
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "name" class="input1" /></td>
+            </tr>
+            <tr>
+               <td align = "right">E-mail</td>
+               <td><input type = "text" name = "email" class="input2" /></td>
+            </tr>
+            <tr>
+               <td align = "right">Phone Number</td>
+               <td><input type = "text" name = "phone" class="input3" /></td>
+            </tr>
+            <tr>
+               <td align = "right">Subject</td>
+               <td>
+                  <select name = "subject" class="select_1">
+                     <option value = "0" selected>Select</option>
+                     <option value = "1">HTML</option>
+                     <option value = "2">JavaScript</option>
+                     <option value = "3">CSS</option>
+                     <option value = "4">JSP</option>
+                  </select>
+               </td>
+            </tr>
+         </table>
+         <p id="demo" style="color:red; text-align:center"></p>
+   <div style="text-align:center"><input type = "submit" value = "Submit" class="button_1" /></div>
+      </form>
+
+      <div class="to-do">
+         <h2>To-Do List</h2>
+         <input type="text" class="input_1" placeholder="Введите задачу">
+         <button class="but1">Добавить</button>
+      </div>
+      <script src="/jsWorks.js"></script>
+   </body>
+</html>
